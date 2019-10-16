@@ -19,6 +19,7 @@ Then deploy the function to Google Cloud:
         --runtime nodejs10 \
         --trigger-http \
         --entry-point perform \
+        --source gs://zap-airtable/function.zip \
         --env-vars-file config.yaml
 
 You can now make POST requests to the function's trigger URL. Fields passed in the request body will be added to a new record in the designated Airtable base/table.
