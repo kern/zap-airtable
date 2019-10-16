@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
-  "license": "UNLICENSED",
+  "license": "BSD-3-Clause",
   "dependencies": {
     "airtable": "^0.7.1",
     "env-var": "^5.1.0",
