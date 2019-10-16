@@ -15,19 +15,23 @@ AIRTABLE_FIELDS: First Name,Last Name  # whitelisted fields to be added
 
 Then deploy the function to Google Cloud:
 
-    $ gcloud functions deploy MY_CLOUD_FN_NAME \
-        --runtime nodejs10 \
-        --trigger-http \
-        --entry-point perform \
-        --source gs://zap-airtable/function.zip \
-        --env-vars-file config.yaml
+```bash
+gcloud functions deploy MY_CLOUD_FN_NAME \
+  --runtime nodejs10 \
+  --trigger-http \
+  --entry-point perform \
+  --source gs://zap-airtable/function.zip \
+  --env-vars-file config.yaml
+```
 
 You can now make POST requests to the function's trigger URL. Fields passed in the request body will be added to a new record in the designated Airtable base/table.
 
 ## Development
 
-    $ make lint
-    $ make build
+```bash
+make lint
+make build
+```
 
 ## License
 
