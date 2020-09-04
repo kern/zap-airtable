@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "airtable": "^0.7.1",
+    "airtable": "^0.7.2",
     "env-var": "^5.1.0",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0",
